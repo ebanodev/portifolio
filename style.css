@@ -32,16 +32,23 @@ section
 		
 	
 }
-
+.banner .text8x
+{
+	display:flex;
+}
 
 .banner .text8x span
 {
 	font-size: 3vw;
 	color: white;
-	transition-delay: 5s;
 	font-family: 'Anonymous Pro', monospace;
 	
 	
+	
+}
+#typed {
+    font-size: 3.5vw;
+    padding-bottom: 0.5rem;
 }
 
 /*FANCY*/
@@ -76,7 +83,20 @@ body
     opacity: 1;
     transform: translateY(0px);
 	visibility: visible;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	
 }
+
+.fancy span.fade:hover
+{
+	-moz-transform: rotate3d(0,1,0,180deg);
+    -webkit-transform: rotate3d(0,1,0,180deg);
+    -ms-transform: rotate3d(0,1,0,180deg);
+    transform: rotate3d(0,1,0,180deg);
+	
+}
+
 /*Fazendo o color change:*/
 
 .changecolor span
@@ -85,13 +105,23 @@ body
     transition: all 1s ease;
     display: flex;
 }
-.brightbx
+.changecolor .fancy
+{
+	color: black;
+	-webkit-transition: 3s;
+	transition: 3s;
+}
+.changecolor .fancy:hover
+{
+	-webkit-transform: rotateY(180);
+	transform: rotateY(180);
+}
+.changecolor
 {
 	
-}
-.changecolor span.color
-{
-	 background: #03e9f4;
+	display:flex;
+	position:relative;
+     background: #03e9f4;
     color: #050801;
     box-shadow: 0 0 5px #03e9f4,
                 0 0 25px #03e9f4,
@@ -100,17 +130,9 @@ body
 				
 	transform: translateY(0px);
 	visibility: visible;
-	
-}
-.changecolor
-{
-	
-    color: white;
-    font-size: 4.6vw;
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	align-items: left;
 	-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
-	
+	margin-right: auto;
+	transition: 3s;
 }
+/*
+para mudar a cor apenas, tirar o opacity, transform e o display do span. E tirar o opacity e transform do span.fade. Colocar apenas o color no span.fade

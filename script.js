@@ -1,6 +1,11 @@
 function changecolor(){
 //pega o conteúdo texto do objeto .fancy e separa cada caracter em um array com a função split.
-const text = document.querySelector(".changecolor"); 
+
+var brightBx = document.getElementById("brightBx");
+brightBx.classList.add('changecolor');
+console.log ("passei aqui");
+
+/* const text = document.querySelector(".changecolor"); 
 const strText = text.textContent;
 const splitText = strText.split("");
 text.textContent = ""; //para tirar a duplicação que ocorre no textContent após o laço de adição da tag span pra cada letra
@@ -30,7 +35,7 @@ function onTick() {
         timer = null;
 		
     }
-}
+} */
 }
 
 
@@ -68,7 +73,7 @@ function onTick() {
         clearInterval(timer);
         timer = null;
 		
-		setTimeout(function(){animeTag.classList.remove("fancy"); animeTag.classList.add('changecolor'); changecolor();}, 1000);
+		setTimeout(function(){changecolor();}, 1000);
     }
 }
 }
