@@ -82,8 +82,10 @@ function onTick() {
  var options = 
       {
         stringsElement: '#typed-strings',
-        typeSpeed: 50,
-		startDelay: 3500,
+        typeSpeed: 80,
+		backSpeed: 100,
+		backDelay: 5000,
+		startDelay: 4500,
 		smartBackspace: false,
        onComplete: function() {
       var cursor = document.getElementsByClassName('typed-cursor')[0];
