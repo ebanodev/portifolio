@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&family=Roboto+Slab&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'inter'; 
+	
+	scroll-behavior: smooth;
+/*	border: 2px solid red;*/
+}
+
+section
+{
+	padding: 100px;
+	
+}
+.banner
+{
+	position: relative;
+	min-height: 100vh;
+	background: url(imagens/banner3.jpg);
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+		
+	
+}
+
+
+.banner .text8x span
+{
+	font-size: 3vw;
+	color: white;
+	transition-delay: 5s;
+	font-family: 'Anonymous Pro', monospace;
+	
+	
+}
+
+/*FANCY*/
+
+
+body
+{
+    background: black;
+}
+.fancy
+{
+	visibility: hidden;
+    color: white;
+    font-size: 4.6vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: left;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+	
+}
+.fancy span 
+{
+	visibility: visible;
+    opacity: 0;
+    transition: all 1s ease;
+    transform: translateY(50px);
+    display: flex; 
+}
+
+.fancy span.fade {
+    opacity: 1;
+    transform: translateY(0px);
+	visibility: visible;
+}
+/*Fazendo o color change:*/
+
+.changecolor span
+{
+	visibility: visible;
+    transition: all 1s ease;
+    display: flex;
+}
+.brightbx
+{
+	
+}
+.changecolor span.color
+{
+	 background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+				
+	transform: translateY(0px);
+	visibility: visible;
+	
+}
+.changecolor
+{
+	
+    color: white;
+    font-size: 4.6vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: left;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+	
+}
