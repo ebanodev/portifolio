@@ -1,9 +1,20 @@
+function brightMenu() {
+	
+	
+	var brightMenu = document.querySelector("ul.menu-items");
+	console.log (brightMenu);
+	brightMenu.classList.toggle('lightOn');
+ 	console.log (brightMenu);
+}
+
 function changecolor(){
 //pega o conteúdo texto do objeto .fancy e separa cada caracter em um array com a função split.
 
 var brightBx = document.getElementById("brightBx");
 brightBx.classList.add('changecolor');
-console.log ("passei aqui");
+
+
+setTimeout(function(){brightMenu();}, 1000);
 
 /* const text = document.querySelector(".changecolor"); 
 const strText = text.textContent;
@@ -73,7 +84,7 @@ function onTick() {
         clearInterval(timer);
         timer = null;
 		
-		setTimeout(function(){changecolor();}, 1000);
+		setTimeout(function(){changecolor();}, 800);
     }
 }
 }
@@ -90,7 +101,7 @@ function onTick() {
        onComplete: function() {
       var cursor = document.getElementsByClassName('typed-cursor')[0];
       
-      setTimeout(function(){cursor.remove(); fancy()}, 2000);
+      setTimeout(function(){cursor.remove(); fancy()}, 3000);
       
         
         }};

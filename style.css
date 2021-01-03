@@ -8,6 +8,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'inter'; 
+/*	min-height: 100vh; */
+/*	min-width: 100vw; */
 	
 	scroll-behavior: smooth;
 /*	border: 2px solid red;*/
@@ -22,12 +24,13 @@
 	left: 0;
 	right: 0;
 	display: flex;
-	justify-content: space-between;
-	padding: 1rem 2rem;
+/*	justify-content: space-between; */
+	padding: 1rem 2rem; 
 	z-index: 1;
 	backdrop-filter: blur(5px);
 	align-items: center;
 	transition: 0.5s;
+	justify-content: space-around;
   }
   .header.sticky
   {
@@ -54,10 +57,17 @@
   .header a 
   {
 	text-decoration: none;
-	color: #fff;
-	font-size: 2rem;
-	font-family: 'Roboto Slab', serif;
+	color: #333;
+/*	font-size: 2rem; */
+	font-family: 'Anonymous Pro', monospace;
 	font-weight: lighter;
+	font-size: 2vw;
+  }
+  .header ul li
+  {  
+/*	padding-right: 1em; */
+	letter-spacing: 0.4em;
+/*	margin-left: 1.2em; */
   }
   .header.sticky a
   {
@@ -65,23 +75,58 @@
   }
   .logo
   {
-	  font-size: 24px;
+	/*  font-size: 24px; */
 	  font-family: 'inter'; 
 	  font-weight: bolder;
+	margin-left: 3%;
   }
   
-  .menu-items {
+  .menu-items 
+  {
 	list-style: none;
 	display: flex;
-	align-items: center;
+/*	align-items: center; */
+	/*adicionado pro efeito de luz 
+	font-size: 1.3rem; */
+	padding: 0.5em 1em;
+    color: #fff;
+/*	text-align:justify;  */
+/*    text-justify:inter-character; */
+	width: 72vw;
+	justify-content: space-evenly;
+	
   }
   
+  .menu-items.lightOn li a
+  {
+	display:flex;
+	position:relative;
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff,
+                    0 0 80px #fff,
+                    0 0 120px #fff,
+                    0 0 160px #fff;
+				
+	transform: translateY(0px);
+	visibility: visible;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+	margin-right: auto;
+	transition: 12s;
+	transition-delay: 1.5s;
+	
+  }
+
+  
+  /* retirado para o efeito de luz 
   .menu-items li a {
 	font-size: 1.3rem;
 	padding: 0.5em 1em;
 	transition: 1s;
 	
   }
+ 
   
   .menu-items li a:hover {
 	background: #03e9f4;
@@ -93,8 +138,8 @@
 				0 0 500px #03e9f4;
 				0 0 1000px #03e9f4;
   }
-  
-  /* nav menu button */
+  */
+  /* nav menu button HAMBURGER */
   .menu-btn {
 	position: relative;
 	display: none;
@@ -140,6 +185,8 @@
 	transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
 	background-color: black;
   }
+  
+  /*MENU ATÉ AQUI*/
 section
 {
 	padding: 10%;
@@ -169,7 +216,6 @@ section
 	font-size: 3vw;
 	color: white;
 	font-family: 'Anonymous Pro', monospace;
-	
 	
 	
 }
@@ -211,7 +257,7 @@ body
     transform: translateY(0px);
 	visibility: visible;
 	-webkit-transition: 0.5s ease-in-out;
-	transition: 0.5s ease-in-out;
+	transition: 0.5s cubic-bezier(.19,1,.19,3.51);
 	
 	/*
 	 -webkit-transition: transform 0.5s ease-in-out;
@@ -243,6 +289,7 @@ body
 	color: black;
 	-webkit-transition: 3s;
 	transition: 3s;
+	text-shadow: 1px 1px 0.1em black;
 }
 .changecolor .fancy:hover
 {
@@ -265,7 +312,12 @@ body
 	visibility: visible;
 	-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
 	margin-right: auto;
-	transition: 3s;
+	transition: 1.5s;
+	letter-spacing: 0.3em;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-left: -1rem;
+	border-radius: 34px;
 }
 /*
 para mudar a cor apenas, tirar o opacity, transform e o display do span. E tirar o opacity e transform do span.fade. Colocar apenas o color no span.fade
