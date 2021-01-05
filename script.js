@@ -1,3 +1,43 @@
+//INTERSECTIONOBSERVER
+/* function toggleMenu(){
+	let callback = function(entries) 
+	{
+
+     entries.forEach(entry => 
+		{
+		console.log(entry.isIntersecting);
+		let menuItems = document.querySelector(".menu-items")
+		let acenderMenu = document.querySelector(".header")
+		if (entry.isIntersecting == false)
+			{
+				acenderMenu.classList.add('acender');
+				menuItems.classList.toggle('lightOn');
+				console.log("tafufando");
+			}
+			else
+			{
+			//	menuItems.classList.add('lightOn')
+				acenderMenu.classList.remove('acender');
+			}
+		})
+    };
+	
+	
+let options =
+{	
+   root: null,
+  rootMargin: "0px 0px 0px 0px",
+  threshold: 0.1 
+};
+
+
+let io = new IntersectionObserver(callback, options);
+
+io.observe(document.querySelector('#brightBx'));
+} */
+
+//FAZ O MENU ACENDER
+
 function brightMenu() {
 	
 	
@@ -96,12 +136,12 @@ function onTick() {
         typeSpeed: 80,
 		backSpeed: 100,
 		backDelay: 5000,
-		startDelay: 4500,
+		startDelay: 7000,
 		smartBackspace: false,
        onComplete: function() {
-      var cursor = document.getElementsByClassName('typed-cursor')[0];
-      
-      setTimeout(function(){cursor.remove(); fancy()}, 3000);
+    /*  let cursor = document.getElementsByClassName('typed-cursor')[0];
+      console.log(cursor); */
+      setTimeout(function(){/*cursor.style.visibility = "hidden";*/ fancy()}, 3000);
       
         
         }};
@@ -112,21 +152,26 @@ var typed = new Typed('#typed', options);
 const callback = (entries, observer) => {
 
     entries.forEach(entry => {
-       
-        if (entry.isIntersecting == false)
-        
-        
+       let menuItems = document.querySelector(".menu-items")
+		let acenderMenu = document.querySelector(".header")
+		let portifolio = document.querySelector(".logo")
+        if (entry.isIntersecting == false)              
         {
-            typed.destroy()
+			acenderMenu.classList.add('acender');
+		console.log(portifolio);
+		portifolio.innerHTML = "Ébano Assumpção";
         }
         else
         {
-            typed.reset()
+			
+			portifolio.innerHTML = "Portifolio";
+			acenderMenu.classList.remove('acender');
         };
 
       });
     };
 
 let io = new IntersectionObserver(callback);
-
+io.observe(document.querySelector('#brightBx'));
+//toggleMenu();
 
