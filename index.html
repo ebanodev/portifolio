@@ -7,7 +7,13 @@
 	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	 -->
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-	<script defer src="script.js"></script>
+	<script defer src="js/script.js"></script>
+	<script defer src='js/scroll.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+<script src='js/jquery.svg3dtagcloud.min.js'></script>
+	
+	<link href='https://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
 	</head>
 	<body>
 		<header class="header">
@@ -25,7 +31,8 @@
 			<li><a href="#contato" class="menu-item">Contato</a></li>
 		</ul>
 		</header>
-		<section class="banner" id="home">		
+		<section class="banner" id="home">
+			<div class="bgbanner id="bgbanner">
 			<div class="text8x">
 				<div id="typed-strings">
 				<p>Olá!</p><p>Eu sou o Ébano Assumpção.</div> 
@@ -39,26 +46,27 @@
 			<h1 id="animeTag" class="fancy">Desenvolvedor Front-End</h1>
 				 </div>
 			
-		
+		</div>
 		</section>
 		<section class="about" id="sobre">
 			<div class="heading">
-				<h2>Sobre mim</h2>
+				<h2>Quem sou eu</h2>
 			</div>
 			<div class="content">
 				
 			<div class="contentBx w50">
 				<p>
 				<h3> Desenvolvimento  </h3> <div class="flutuante" >
-					<img src="imagens/img1.jpg" class="img">
+					<div id='tagcloud' class='tagCloud'></div>
 					</div> 
-				Amante de desafios, sou auto-didata. Pesquisar, investigar, superar e aprender algo novo todos os dias é uma necessidade.<br><br>Além de desenvolvedor, sou eletricista e músico. A constante busca pelo auto-conhecimento é o alicerce para me tornar a cada dia um pouquinho melhor que ontem. <br>Compreendo que problemas e soluções andam de mãos dadas. Sempre observando a dualidade da vida para encontrar o equilibrio, pra mim, é onde se encontra o bom que faz o bem. <br><br>
+				Amante de desafios, sou auto-didata. Pesquisar, investigar, superar e aprender algo novo todos os dias é fundamental.<br><br>Além de desenvolvedor, trabalho como músico e tecnico eletronico. A constante busca pelo auto-conhecimento é o alicerce para me tornar a cada dia um pouquinho melhor que ontem.
 					<br>
 					Já fiz alguns trabalhos utilizando micro-controladores, compreendo o processo de funcionamento de redes... E durante a quarentena decedí me dedicar ao desenvolvimento front-end. 
 
-				Já trabalhei com linguagem C, PHP, JavaScript, SQL, CSS3, HTML5, XML, JSON, Yaml, Protocolos TCP/IP e APIs.
+				Já trabalhei com linguagem C, PHP, JavaScript, SQL, CSS3, HTML5, jQuery, XML, JSON, Yaml, Protocolos TCP/IP e APIs.
 				</p>
 			</div>
+			<script src='js/tagcloud.js'> </script>
 			
 			</div>
 		</section>
