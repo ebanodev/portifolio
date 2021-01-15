@@ -78,7 +78,7 @@
 		<section class="work" id="trabalhos">
 			<div class="headingW">
 				<h2>Trabalhos</h2>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				<p>Alguns dos trabalhos já produzidos por mim...</p>
 			</div>
 			 <div class="wrapper">
 				
@@ -122,64 +122,87 @@
 
 		</div>
 			
-			<script type="text/javascript" src="slicebox/js/jquery.slicebox.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				
-				var Page = (function() {
-
-					var $navArrows = $( '#nav-arrows' ).hide(),
-						$navOptions = $( '#nav-options' ).hide(),
-						$shadow = $( '#shadow' ).hide(),
-						slicebox = $( '#sb-slider' ).slicebox( {
-							onReady : function() {
-
-								$navArrows.show();
-								$navOptions.show();
-								$shadow.show();
-
-							},
-							orientation : 'r',
-							cuboidsRandom : true,
-							disperseFactor : 30
-						} ),
-						
-						init = function() {
-
-							initEvents();
-							
-						},
-						initEvents = function() {
-
-							// add navigation events
-							$navArrows.children( ':first' ).on( 'click', function() {
-
-								slicebox.next();
-								return false;
-
-							} );
-
-							$navArrows.children( ':last' ).on( 'click', function() {
-								
-								slicebox.previous();
-								return false;
-
-							} );
-							
-						
-
-						};
-
-						return { init : init };
-
-				})();
-
-				Page.init();
-
-			});
-		</script>
+			
 			
 		</section>
+		
+		<section class="testimonial" id="depoimentos">
+			<div class= "heading">
+				<h2>Depoimentos</h2>
+				<p> Contrate meu serviço, e tenha seu depoimento nesta área.</p>
+			</div>
+			<div class="content">
+				<div class="testimonialBx">
+					<p>É sempre muito bom trabalhar com o Ébano, ele já me ajudou em diversos projetos, sempre paciente e bastante dedicado. Graças ao seu trabalho hoje tenho meu projeto pronto e já até conseguí aprovações em editais com todo o material produzido.</p>
+					<h3>Mirra (Marina Antonioli)<br><span>Artista Plastica</span></br></h3>
+				</div>
+				<div class="testimonialBx">
+					
+					<p class="seuDepoimento">...O Seu Depoimento Aquí...</p>
+					<br><br>
+					<h3>Seu Nome<br><span></span></br></h3>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" id="contato">
+			<div class= "heading white">
+				<h2>Fale comigo!</h2>
+				<p> Dúvidas, Sugestões, Orçamentos, Elogios, Críticas...</p>
+			</div>
+			<div class="contentcontato">
+				<div class="formBx">
+					<form>
+						<h3>O que eu posso fazer por você?</h3>
+						<input type="text" name="" placeholder="Como você se chama?">
+						<input type="email" name="" placeholder="Teu endereço de e-mail para eu te responder.">
+						<textarea placeholder="Me diga como posso te ajudar..."></textarea>
+						<input type="submit" value="Enviar">
+					</form>
+				</div>
+				<div class="contactInfo">
+			<!--		<h3>Contato:</h3> -->
+					<div class="contactInfoBx">
+						<div class="box">
+							
+							<div class="text">
+								<div class="icon">
+									<i class="fa fa-map-marker"></i>
+								</div>
+								<h3>Endereço</h3>
+								<p>Rua Martins Torres, 145casa<br> Niterói-RJ<br>Cep 24240705</p>
+							</div>
+						</div>
+
+						<div class="box">	
+							<div class="text">
+								<div class="icon">
+									<i class="fa fa-phone"></i>
+								</div>
+								<h3>Telefone</h3>
+								<p>55+(21) 998 213 186</p>
+							</div>
+						</div>
+
+						<div class="box">
+							<div class="text">
+								<div class="icon">
+									<i class="fa fa-envelope-o"></i>
+								</div>
+								<h3>Email</h3>
+								<p>ebanoassumpcao@gmail.com</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+		</section>
+		<div class="copyright">
+			<p> Este Site Foi Desenvolvido Por Ébano Assumpção. Copyright (c) 2020 Todos os direitos reservados</p>
+		</div>
+		<script type="text/javascript" src="slicebox/js/jquery.slicebox.js"></script>
 		</body>
 		
 	

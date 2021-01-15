@@ -1,64 +1,64 @@
 var entries = [{
     
     image: 'img/c.svg',
-    width: '200',
-    height: '200',
+    width: '100',
+    height: '100',
     url: '#',
     target: '_top',
     tooltip: 'Linguagem C'
   },
   {
     image: 'img/git.svg',
-    width: '200',
-    height: '200',
+    width: '100',
+    height: '100',
     url: '#',
     target: '_top',
     tooltip: 'GIT'
   },
   {
     image: 'img/html.svg',
-    width: '200',
-    height: '200',
+    width: '100',
+    height: '100',
     url: '#',
     target: '_top',
     tooltip: 'HTML'
   },
   {
     image: 'img/javascript.svg',
-    width: '200',
-    height: '200',
+    width: '100',
+    height: '100',
     url: '#',
     target: '_top',
     tooltip: 'JavaScript'
   },
   {
     image: 'img/css.svg',
-    width: '200',
-    height: '200',
+    width: '100',
+    height: '100',
     url: '#',
     target: '_top',
     tooltip: 'CSS'
   },
   {
     image: 'img/php.svg',
-    width: '200',
-    height: '200',
+    width: '100',
+    height: '100',
     url: '#',
     target: '_top',
     tooltip: 'PHP'
   },
   {
     image: 'img/sql.svg',
-    width: '200',
-    height: '200',
+    width: '100',
+    height: '100',
     url: '#',
     target: '_top',
     tooltip: 'SQL'
   },
   {
     image: 'img/gimp.svg',
-    width: '200',
-    height: '200',
+    width: '100',
+    height: '100',
     url: '#',
     target: '_top',
     tooltip: 'Gimp'
@@ -69,26 +69,27 @@ var entries = [{
 var settings = {
 
   entries: entries,
-  width: 940,
-  height: 880,
-  radius: '74%',
-  radiusMin: 75,
-  bgDraw: true,
-  bgColor: 'white',
+  width: '100%',
+  height: '100%',
+  radius: '60%',
+  radiusMin: 30,
+  radiusMax: 50,
+  bgDraw: false,
+  bgColor: 'transparent',
   opacityOver: 1.00,
   opacityOut: 0.05,
-  opacitySpeed: 6,
+  opacitySpeed: 15,
   fov: 800,
-  speed: 1,
+  speed: 2,
   fontFamily: 'Anonymous Pro, sans-serif',
-  fontSize: '15',
+  fontSize: '14px',
   fontColor: 'black',
   fontWeight: 'normal', //bold
   fontStyle: 'normal', //italic 
   fontStretch: 'ultra-expanded', //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
   fontToUpperCase: true,
   tooltipFontFamily: 'Oswald, Arial, sans-serif',
-  tooltipFontSize: '30',
+  tooltipFontSize: '16',
   tooltipFontColor: 'black',
   tooltipFontWeight: 'normal', //bold
   tooltipFontStyle: 'normal', //italic 

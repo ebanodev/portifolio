@@ -12,7 +12,7 @@
 /*	min-width: 100vw; */
 	
 	scroll-behavior: smooth;
-/*	border: 2px solid red;*/
+/*	border: 2px solid red; */
 	
 }
 body
@@ -30,8 +30,8 @@ body
 	right: 0;
 	display: flex;
 /*	justify-content: space-between; */
-	padding: 1rem 2rem; 
-	z-index: 1;
+	padding: 0.5rem 2rem; 
+	z-index: 9999;
 	backdrop-filter: blur(5px);
 	align-items: center;
 	transition: 0.5s;
@@ -343,11 +343,12 @@ body
 	-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
 	margin-right: auto;
 	transition: 1.5s;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.6em;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	margin-left: -1rem;
 	border-radius: 34px;
+	justify-content: space-around;
 }
 @keyframes meEnter {
   from {
@@ -380,13 +381,13 @@ O HEADER FOI ATÉ AQUI */
 .heading h2
 {
 		font-weight: 600;
-		font-size: 4.6vw;
+		font-size: 30px;
 }
 .content
 {
 	display: flex;
 	justify-content: space-between;
-	font-size: 2vw;
+/*	font-size: 2vw; */
 }
 
 
@@ -412,7 +413,12 @@ O HEADER FOI ATÉ AQUI */
 	
 	float: right;
 	width: 50%;
-	margin-left: 1em;
+	margin-left: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+	top: -92px;
+	position: relative;
 }
 .contentBx h3
 {
@@ -423,6 +429,7 @@ O HEADER FOI ATÉ AQUI */
 {
 	min-width: 50%;
 	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
 }
 /*	
 } Isso aqui é pra fazer animação com o intersectionObserver no Quem Sou Eu
@@ -458,5 +465,156 @@ O HEADER FOI ATÉ AQUI */
 }
 
 /*CONFIGURAÇÕES DO CAROUSEL*/
+/*DEPOIMENTOS EM DIANTE*/
 
+.testimonial
+{
+	background: #f7f7f7;
+}
+.seuDepoimento
+{
+	letter-spacing: 13px;
+}
+.testimonial .content
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.testimonial .content .testimonialBx
+{
+	max-width: calc(50% - 40px);
+	padding: 60px 40px;
+	margin: 20px;
+	background: #2196f3;
+}
+.testimonial .content .testimonialBx p
+{
+	color: #fff;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 300;
+}
+.testimonial .content .testimonialBx h3
+{
+	margin-top: 40px;
+	text-align: end;
+	color: #fff;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1em;
+}
+.testimonial .content .testimonialBx h3 span
+{
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.heading.white
+{
+	color:white;
+}
+.contact
+{
+	background: #111;
+	padding-bottom: 39px;
+}
+.formBx
+{
+	min-width:60%;
+	margin-bottom: 30px;
+}
+.formBx form
+{
+	display:flex;
+	flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3
+{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea
+{
+	margin-bottom: 20px;
+	padding: 15px;
+	font-size: 16px;
+	background: transparent;
+	border: none;
+	outline: none;
+	background: #222;
+	color: #fff;
+	resize: none;
+}
+.formBx form textarea
+{
+	min-height: 200px;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder
+{
+	color: #999;
+}
+.formBx form input[type="submit"]
+{
+	max-width: 100px;
+	background: #2196f3;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.contactInfo
+{
+	min-width: 40%;
+}
+.contactInfoBx
+{
+	position: relative;
+}
+.contactInfoBx .box
+{
+	position: relative;
+	padding: 20px 3px;
+	display: flex;
+	justify-content: space-between;
+}
+.contactInfoBx .box .icon
+{
+	min-width: 40px;
+	padding-top: 4px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 24px;
+}
+.contactInfoBx .box .text
+{
+	display: relative;
+	margin-Left: 0px;
+	font-size: 2.5vh;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+	
+}
+.contactInfoBx .box .text h3
+{
+	font-weight: 500;
+	color: #2196f3;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 3.7vh;
+}
+.copyright
+{
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
 
