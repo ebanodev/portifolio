@@ -230,3 +230,31 @@ $(function() {
 				Page.init();
 
 			});
+			
+//MENU MOBILE
+
+        //para funcionar o menu no modo moblie
+//			const menuToggle = document.querySelector('.toggle');
+        const menu = document.querySelector('.menu-items'); 
+        const btnMenu = document.querySelector('.menu-btn');
+        const menuItem = document.querySelectorAll('.menu-item');	
+const roll = document.querySelector('.roll');
+
+        
+        btnMenu.addEventListener('click', () => {toggle()});
+
+        
+        
+        menuItem.forEach((item) =>
+        {item.addEventListener("click", () => 
+            {if (btnMenu.classList.contains("open")) 
+                {toggle();}
+             });
+        });
+        
+        function toggle()
+        {menu.classList.toggle('open');
+        btnMenu.classList.toggle('open');
+            roll.classList.toggle('nop');
+//			menuToggle.classList.toggle('active'); 
+        }
