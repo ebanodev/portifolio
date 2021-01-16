@@ -3,7 +3,7 @@ var entries = [{
     image: 'img/c.svg',
     width: '100',
     height: '100',
-    url: '#',
+    url: '#sobre',
     target: '_top',
     tooltip: 'Linguagem C'
   },
@@ -11,7 +11,7 @@ var entries = [{
     image: 'img/git.svg',
     width: '100',
     height: '100',
-    url: '#',
+    url: '#sobre',
     target: '_top',
     tooltip: 'GIT'
   },
@@ -19,7 +19,7 @@ var entries = [{
     image: 'img/html.svg',
     width: '100',
     height: '100',
-    url: '#',
+    url: '#sobre',
     target: '_top',
     tooltip: 'HTML'
   },
@@ -27,7 +27,7 @@ var entries = [{
     image: 'img/javascript.svg',
     width: '100',
     height: '100',
-    url: '#',
+    url: '#sobre',
     target: '_top',
     tooltip: 'JavaScript'
   },
@@ -35,7 +35,7 @@ var entries = [{
     image: 'img/css.svg',
     width: '100',
     height: '100',
-    url: '#',
+    url: '#sobre',
     target: '_top',
     tooltip: 'CSS'
   },
@@ -43,7 +43,7 @@ var entries = [{
     image: 'img/php.svg',
     width: '100',
     height: '100',
-    url: '#',
+    url: '#sobre',
     target: '_top',
     tooltip: 'PHP'
   },
@@ -51,7 +51,7 @@ var entries = [{
     image: 'img/sql.svg',
     width: '100',
     height: '100',
-    url: '#',
+    url: '#sobre',
     target: '_top',
     tooltip: 'SQL'
   },
@@ -59,7 +59,7 @@ var entries = [{
     image: 'img/gimp.svg',
     width: '100',
     height: '100',
-    url: '#',
+    url: '#sobre',
     target: '_top',
     tooltip: 'Gimp'
   }

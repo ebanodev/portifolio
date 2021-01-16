@@ -63,13 +63,13 @@
 				<h3> Desenvolvimento  </h3> <div class="flutuante" >
 					<div id='tagcloud' class='tagCloud'></div>
 					</div> 
-				Amante de desafios, sou auto-didata. Pesquisar, investigar, superar e aprender algo novo todos os dias é essencial.<br> Me sinto bem ao exercitar meus neuronios.<br> Essa sede pelas ciências é o meu reflexo na constante busca pelo auto-conhecimento. Para evoluir, cada dia, me tornando um pouquinho melhor que ontem.
+				Amante de desafios, sou auto-didata. Pesquisar, investigar, superar e aprender algo novo todos os dias é essencial.<br> Me sinto bem ao exercitar meus neuronios.<br> Essa sede pelas ciências é o meu reflexo na constante busca pelo auto-conhecimento para evoluir, cada dia, me tornando um pouquinho melhor que ontem.
 					<br>
 					Além de desenvolvedor, trabalho como músico e tecnico eletronico.
 					Também já realizei trabalhos utilizando micro-controladores e compreendo o processo do funcionamento de redes. <br>
 					Mas foi durante a quarentena que me dediquei ao aprofundamento do desenvolvimento front-end. <br>
 
-				Já trabalhei com linguagem C, PHP, JavaScript, SQL, CSS3, HTML5, jQuery, XML, JSON, Yaml, Protocolos TCP/IP e APIs.
+				Já trabalhei com linguagem C, PHP, JavaScript, SQL, CSS3, HTML5, XML, JSON, Yaml, Protocolos TCP/IP e APIs.
 				</p>
 			</div>
 			<script src='js/tagcloud.js'> </script>
@@ -154,11 +154,12 @@
 			</div>
 			<div class="contentcontato">
 				<div class="formBx">
-					<form>
+					<form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbw3MrcFKocO6pUhEg4I5Hx3Do0iDI3PsH4iZgr3/exec">
 						<h3>O que eu posso fazer por você?</h3>
-						<input type="text" name="" placeholder="Como você se chama?">
-						<input type="email" name="" placeholder="Teu endereço de e-mail para eu te responder.">
-						<textarea placeholder="Me diga como posso te ajudar..."></textarea>
+						<input type="text" id="name" name="name" placeholder="Como você se chama?">
+						<input id="email" name="email" type="email" placeholder="Teu endereço de e-mail para eu te responder.">
+						<textarea id="message" name="message" rows="10" placeholder="Me diga como posso te ajudar..."></textarea>
 						<input type="submit" value="Enviar">
 					</form>
 				</div>
@@ -202,8 +203,9 @@
 			</div>
 		</section>
 		<div class="copyright">
-			<p> Este Site Foi Desenvolvido Por Ébano Assumpção. Copyright (c) 2020 Todos os direitos reservados</p>
+			<p> Este Site Foi Desenvolvido Por Ébano Assumpção. Copyright (c) 2021 Todos os direitos reservados</p>
 		</div>
+		<script data-cfasync="false" src="./js/form-submission-handler.js"></script>
 		<script type="text/javascript" src="slicebox/js/jquery.slicebox.js"></script>
 		</body>
 		
