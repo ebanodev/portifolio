@@ -1,50 +1,57 @@
-//INTERSECTIONOBSERVER
-/* function toggleMenu(){
-	let callback = function(entries) 
-	{
+const modal = document.querySelector(".modal");
+const previews = document.querySelectorAll(".sb-slider img");
+const original = document.querySelector(".full-img");
+const caption = document.querySelector (".caption");
+const site = document.querySelector (".site");
+const teste = document.querySelector(".teste");
+const a = document.getElementById('site')
 
-     entries.forEach(entry => 
-		{
-		console.log(entry.isIntersecting);
-		let menuItems = document.querySelector(".menu-items")
-		let acenderMenu = document.querySelector(".header")
-		if (entry.isIntersecting == false)
-			{
-				acenderMenu.classList.add('acender');
-				menuItems.classList.toggle('lightOn');
-				console.log("tafufando");
-			}
-			else
-			{
-			//	menuItems.classList.add('lightOn')
-				acenderMenu.classList.remove('acender');
-			}
-		})
-    };
+previews.forEach(preview => {
+	preview.addEventListener('click', () => {
+		
+		modal.classList.add("open"); 
+		original.classList.add("open");
+		roll.classList.add('nop');
+		
+	/*	a.href = "https://www.mirra.com.br" */
+		
+		 const sitev = preview.getAttribute("site");
+		console.log(site);
+		site.href = sitev; 
+		const veja = preview.getAttribute("veja");
+		site.innerHTML = veja;
 	
+		const originalSrc = preview.getAttribute("data-original");
+		original.src= originalSrc;
+		
+		const altText = preview.alt;
+		caption.textContent = altText;
+		
+	})
+})
+caption.addEventListener("click", (e)=> {
+		console.log("clicou");
+		console.log("fechou");
+		modal.classList.remove("open");
+		original.classList.remove("open")
+		roll.classList.remove('nop');
 	
-let options =
-{	
-   root: null,
-  rootMargin: "0px 0px 0px 0px",
-  threshold: 0.1 
-};
+})
+modal.addEventListener("click", (e) => {
+	if (e.target.classList.contains("modal")) {
+		console.log("fechou");
+		modal.classList.remove("open");
+		original.classList.remove("open")
+		roll.classList.remove('nop');
+	}
+}) 
 
-
-let io = new IntersectionObserver(callback, options);
-
-io.observe(document.querySelector('#brightBx'));
-} */
-
-//FAZ O MENU ACENDER
-
+//MENU ACENDENDO
 function brightMenu() {
 	
 	
 	var brightMenu = document.querySelector("ul.menu-items");
-	console.log (brightMenu);
 	brightMenu.classList.toggle('lightOn');
- 	console.log (brightMenu);
 }
 
 function changecolor(){
@@ -135,8 +142,8 @@ function onTick() {
         stringsElement: '#typed-strings',
         typeSpeed: 80,
 		backSpeed: 100,
-		backDelay: 5000,
-		startDelay: 7000,
+		backDelay: 2000,
+		startDelay: 4000,
 		smartBackspace: false,
        onComplete: function() {
     /*  let cursor = document.getElementsByClassName('typed-cursor')[0];
@@ -158,7 +165,6 @@ const callback = (entries, observer) => {
         if (entry.isIntersecting == false)              
         {
 			acenderMenu.classList.add('acender');
-		console.log(portifolio);
 		portifolio.innerHTML = "Ébano Assumpção";
         }
         else
@@ -177,8 +183,8 @@ io.observe(document.querySelector('#brightBx'));
 
 // SLICEBOX
 
+
 $(function() {
-				
 				var Page = (function() {
 
 					var $navArrows = $( '#nav-arrows' ).hide(),

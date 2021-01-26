@@ -86,26 +86,42 @@
 				
 
 				<ul id="sb-slider" class="sb-slider">
-					<li>
-						<a href="" target="_blank"><img src="slicebox/images/praia.jpg" alt="image1"/></a>
+					<li class="img-conteiner">
+						<img src="slicebox/images/praia.jpg" alt="Fechar [X]"
+							data-original='slicebox/full/praiafull.jpg'
+							site="" veja=""/>
 						<div class="sb-description">
 							<h3>Montagem de imagem</h3>
 						</div>
 					</li>
-					<li>
-						<a href="" target="_blank"><img src="slicebox/images/portifolio.jpg" alt="image2"/></a>
+					<li class="img-conteiner">
+						<img src="slicebox/images/portifolio.jpg" alt="Fechar [X]"
+							data-original='slicebox/full/portifoliofull.jpg'
+							site="" veja=""/>
 						<div class="sb-description">
 							<h3>Site idealizado e produzido por mim</h3>
 						</div>
 					</li>
-					<li>
-						<a href="" target="_blank"><img src="slicebox/images/celular.jpg" alt="image1"/></a>
+					<li class="img-conteiner">
+						<img src="slicebox/images/celular.jpg" alt="Fechar [X]"
+							data-original='slicebox/full/celularfull.jpg'
+							site="" veja=""/>
 						<div class="sb-description">
 							<h3>Montagem de imagem</h3>
 						</div>
 					</li>
-					<li>
-						<a href="" target="_blank"><img src="slicebox/images/seuProjeto.jpg" alt="image1"/></a>
+					<li class="img-conteiner">
+						<img src="slicebox/images/mirracat.jpg" alt="Fechar [X]"
+							data-original='slicebox/full/mirracatfull.jpg'
+							site="https://www.mirracats.com.br" veja="Visite o Site"/>
+						<div class="sb-description">
+							<h3>Site idealizado e produzido por mim</h3>
+						</div>
+					</li>
+					<li class="img-conteiner">
+						<img src="slicebox/images/seuProjeto.jpg" alt="Fechar [X]"
+							data-original=''
+							site="" veja=""/>
 						<div class="sb-description">
 							<h3>Faça parte desta galeria.</h3>
 						</div>
@@ -117,6 +133,12 @@
 				<div id="nav-arrows" class="nav-arrows">
 					<a href="#">Next</a>
 					<a href="#">Previous</a>
+				</div>
+				
+				<div class="modal">
+					<img src="" alt="" class="full-img"/>
+					<a href="" target="_blank" class="site" id="site"></a>
+					<p class="caption"></p>
 				</div>
 
 			</div>
@@ -140,7 +162,7 @@
 				</div>
 				<div class="testimonialBx">
 					
-					<p class="seuDepoimento">SEU DOPOIMENTO AQUI.</p>
+					<p class="seuDepoimento">SEU DEPOIMENTO AQUI.</p>
 					<br><br>
 					<h3>Seu Nome<br><span></span></br></h3>
 				</div>
@@ -160,7 +182,14 @@
 						<input type="text" id="name" name="name" placeholder="Como você se chama?">
 						<input id="email" name="email" type="email" placeholder="Teu endereço de e-mail para eu te responder.">
 						<textarea id="message" name="message" rows="10" placeholder="Me diga como posso te ajudar..."></textarea>
-						<input type="submit" value="Enviar">
+						<div class="shaddow">
+						<input type="submit" value="Enviar" class="reflect">
+						</div>
+						<div style="display:none" class="thankyou_message">
+ <!-- You can customize the thankyou message by editing the code below -->
+ <h2><em>Muito Obrigado</em> por entrar em contato! A mensagem foi enviada com sucesso!
+ </h2>
+</div>
 					</form>
 				</div>
 				<div class="contactInfo">
@@ -203,7 +232,7 @@
 			</div>
 		</section>
 		<div class="copyright">
-			<p> Este Site Foi Desenvolvido Por Ébano Assumpção. Copyright (c) 2021 Todos os direitos reservados</p>
+			<p> Site desenvolvido por ebano.dev | COPYRIGHT © 2021 todos os direitos reservados.</p>
 		</div>
 		<script data-cfasync="false" src="./js/form-submission-handler.js"></script>
 		<script type="text/javascript" src="slicebox/js/jquery.slicebox.js"></script>
