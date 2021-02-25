@@ -62,7 +62,34 @@ var entries = [{
     url: '#sobre',
     target: '_top',
     tooltip: 'Gimp'
+  },
+  {
+    image: 'img/sass.svg',
+    width: '100',
+    height: '100',
+    url: '#sobre',
+    target: '_top',
+    tooltip: 'Sass'
+  },
+  {
+    image: 'img/Gnulinux.svg',
+    width: '100',
+    height: '100',
+    url: '#sobre',
+    target: '_top',
+    tooltip: 'GNU/Linux'
+  },
+  {
+    image: 'img/WordPress.svg',
+    width: '100',
+    height: '100',
+    url: '#sobre',
+    target: '_top',
+    tooltip: 'WordPress'
   }
+
+
+
 
 ];
 
