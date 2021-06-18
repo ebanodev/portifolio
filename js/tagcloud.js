@@ -16,12 +16,44 @@ var entries = [{
     tooltip: 'GIT'
   },
   {
+    image: 'img/aws.svg',
+    width: '100',
+    height: '100',
+    url: '#sobre',
+    target: '_top',
+    tooltip: 'AWS'
+  },
+  {
+    image: 'img/vim.svg',
+    width: '100',
+    height: '100',
+    url: '#sobre',
+    target: '_top',
+    tooltip: 'VIM'
+  },
+  {
+    image: 'img/python-logo.svg',
+    width: '240',
+    height: '240',
+    url: '#sobre',
+    target: '_top',
+    tooltip: 'Python'
+  },
+  {
+    image: 'img/inkscape.svg',
+    width: '100',
+    height: '100',
+    url: '#sobre',
+    target: '_top',
+    tooltip: 'Inkscape'
+  },
+  {
     image: 'img/html.svg',
     width: '100',
     height: '100',
     url: '#sobre',
     target: '_top',
-    tooltip: 'HTML'
+    tooltip: 'HTML5'
   },
   {
     image: 'img/javascript.svg',
@@ -37,7 +69,7 @@ var entries = [{
     height: '100',
     url: '#sobre',
     target: '_top',
-    tooltip: 'CSS'
+    tooltip: 'CSS3'
   },
   {
     image: 'img/php.svg',
