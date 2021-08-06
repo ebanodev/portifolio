@@ -130,16 +130,16 @@ var settings = {
   entries: entries,
   width: '100%',
   height: '100%',
-  radius: '60%',
+  radius: '100%',
   radiusMin: 30,
-  radiusMax: 50,
+  radiusMax: 1000,
   bgDraw: false,
   bgColor: 'transparent',
   opacityOver: 1.00,
   opacityOut: 0.05,
   opacitySpeed: 15,
   fov: 800,
-  speed: 2,
+  speed: 1,
   fontFamily: 'Anonymous Pro, sans-serif',
   fontSize: '14px',
   fontColor: 'black',
@@ -154,7 +154,7 @@ var settings = {
   tooltipFontStyle: 'normal', //italic 
   tooltipFontStretch: 'normal', //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
   tooltipFontToUpperCase: false,
-  tooltipTextAnchor: 'left',
+  tooltipTextAnchor: 'center',
   tooltipDiffX: 0,
   tooltipDiffY: 10
 
