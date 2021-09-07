@@ -244,13 +244,15 @@ section
 	position: relative;
 	min-height: 100vh;
 	background: url(imagens/banner3.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: right;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: left;
-	background-attachment: fixed;
+	
 	animation: 3s meEnter;
 		
 	
@@ -477,7 +479,12 @@ svg
 }*/
 .work
 {
-	background-color: black;
+	/*background-color: black;*/
+	background: url(imagens/banner3.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
 }
 .headingW
 {
